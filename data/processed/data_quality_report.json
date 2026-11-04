@@ -1,0 +1,102 @@
+{
+  "rows_in": 100000,
+  "missing_values": 0,
+  "invalid_rows": {
+    "bad_date": 0,
+    "bad_time": 0,
+    "bad_direction": 0,
+    "bad_count": 0,
+    "missing_junction_or_file": 0
+  },
+  "rows_valid": 100000,
+  "matches_expected_100000": true,
+  "source": {
+    "name": "Heterogeneous Traffic Count Dataset, Pune (Jan 2023)",
+    "publisher": "Mendeley Data",
+    "doi": "10.17632/xnf2k6n288.1",
+    "url": "https://data.mendeley.com/datasets/xnf2k6n288/1",
+    "contributors": "Ashwini Matange and Jibi Abraham",
+    "license": "CC BY 4.0",
+    "collection_period": "January 11-18, 2023",
+    "selected_records": 100000,
+    "subset_note": "This project uses 100,000 selected records of the original dataset, not the complete dataset."
+  },
+  "exact_duplicate_rows": 95040,
+  "junctions": [
+    "AlankarChowk",
+    "JehangirChowk",
+    "RTOChowk"
+  ],
+  "cameras": [
+    "a2",
+    "a3",
+    "j1",
+    "j2",
+    "j3",
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "clips": 115,
+  "rows_per_junction": {
+    "AlankarChowk": 27840,
+    "JehangirChowk": 37400,
+    "RTOChowk": 34760
+  },
+  "clips_per_junction": {
+    "AlankarChowk": 32,
+    "JehangirChowk": 43,
+    "RTOChowk": 40
+  },
+  "rows_per_direction": {
+    "UP": 25070,
+    "DOWN": 25020,
+    "RIGHT": 24955,
+    "LEFT": 24955
+  },
+  "directions": [
+    "DOWN",
+    "LEFT",
+    "RIGHT",
+    "UP"
+  ],
+  "estimated_fps": 25,
+  "counter_series": 1840,
+  "counters_that_decrease": 0,
+  "clips_with_nonzero_first_frame": 1,
+  "first_date": "2023-01-11",
+  "last_date": "2023-01-18",
+  "dates": 8,
+  "one_date_per_file": true,
+  "one_camera_junction_per_file": true,
+  "time_never_goes_back": true,
+  "clip_seconds": {
+    "min": 8.72,
+    "mean": 8.72,
+    "max": 8.72
+  },
+  "counter_first_value_zero": 459,
+  "counter_sequences": 460,
+  "date_matches_filename": true,
+  "camera_matches_filename": true,
+  "first_time": "08:59:19",
+  "last_time": "11:29:04",
+  "total_clip_seconds": 1002.8,
+  "total_vehicles": 760,
+  "vehicles_by_class": {
+    "car": 421,
+    "motorbike": 244,
+    "bus": 40,
+    "truck": 55
+  },
+  "notes": {
+    "count_handling": "Count values are stored unchanged. Every counter only rises inside its file and direction (0 of 1840 series decrease), so vehicles are the sum of increases within one file/direction, never summed rows or differences across files.",
+    "duplicates": "Identical rows are repeated video frames of the same second and are kept."
+  },
+  "limitations": [
+    {
+      "title": "Limited Junction Coverage",
+      "text": "The dataset covers only three traffic junctions in Pune. Model performance may vary when applied to other junctions."
+    }
+  ]
+}
